@@ -1,4 +1,7 @@
 import './globals.css'
+import Navbar from './components/Navbar'
+
+export const revalidate = 3600
 
 
 export const metadata = {
@@ -15,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body>
+      <Navbar />
         <main className="max-w-6xl mx-auto">
           {children}
         </main>
